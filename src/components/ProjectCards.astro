@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+const allProjects = await Astro.glob('../pages/projects/*.md');
+---
+<div class="project-cards">
+    {allProjects.map((project) => <a class="project-card" href={project.url}>
+        <h3>{project.frontmatter.title}</h3>
+        <Image class="project-thumbnail" format="webp" width={250} height={250} loading="eager" src={project.frontmatter.image.url} alt={project.frontmatter.image.alt} title={project.frontmatter.image.alt}/>
+        <p>{project.frontmatter.description}</p>
+        </a>)
+        }
+</div>

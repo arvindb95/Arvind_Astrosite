@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from 'astro-icon/components';
+import Social from "./Social.astro";
+---
+
+<div class="side-bar">
+    <Image format="webp" width={250} height={250} loading="eager" src="/Arvind_new_profile_pic.webp" alt="Arvind Balasubramanian" title="Arvind Balasubramanian"/>
+    <div class="details">
+        <p> Arvind Balasubramanian </p>
+    </div> 
+    <ul>
+        <li><a href="/"><Icon name="house-chimney" style="position: relative; top: 1px"/>  Home</a></li>
+        <li><a href="/research/"><Icon name="satellite-dish" style="position: relative; top: 1px"/>  Research</a></li>
+        <li><a href="/publications/"><Icon name="book" style="position: relative; top: 2px"/>  Publications</a></li>
+        <li><a href="/Arvind_Balasubramanian_CV.pdf" target="_blank"><Icon name="file-pdf" style="position: relative; top: 4px"/> CV</a></li>
+    </ul>
+    <div class="side-bar-logos">
+        <Social />
+    </div>
+</div>

@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import { Image } from "astro:assets";
+
+const tabTitle = "Arvind Balasubramanian"
+const pageTitle = "Hi, I am Arvind!"
+---
+<BaseLayout tabTitle={tabTitle} pageTitle={pageTitle}>
+		  
+	<p>I am currently a Visiting Fellow at the <a href="https://www.tifr.res.in/~daa/index.html" target="_blank">Department of Astronomy and Astrophysics, </a>Tata Institute of Fundamental Research, Mumbai, pursuing research on localising and studying the environment of Fast Radio Bursts in <a href="https://web.tifr.res.in/~shriharsh.tendulkar/" target="_blank">Dr. Shriharsh Tendulkar</a>'s group. 
+	</p>
+	<p>For my <a href="/projects/project-2">PhD thesis</a>, I worked at <a href="https://www.depts.ttu.edu/phas/" target="_blank">Department of Physics, Texas Tech University</a> with <a href="http://www.depts.ttu.edu/phas/People/Faculty/bio_corsi/bio_corsi.php" target="_blank">Dr. Alessandra Corsi</a> on studying radio emission from transients like merging compact objects like neutron stars and black holes, and supernova remnants.</p>
+
+<p>I worked on localising transients using the Cadmium Zinc Telluride Imager on board AstroSat for my <a href="/projects/project-3">Masters Thesis</a>.</p>
+
+<p>You can read more about my research projects in the <a href="/research">Research tab</a>. My contact information can be accessed from the icons at the bottom of the sidebar.</p>	  	
+
+<div class="center-image">
+	<Image class="image" width={700} height={700} loading="eager" src="/paper_wordcloud.webp" alt="Word cloud" title="Word cloud"/>
+ </div>
+ <div class="image-caption">
+	 A word cloud from my recent papers generated using the python package 
+	<a href="https://github.com/amueller/word_cloud">wordcloud</a>
+ </div>
+
+</BaseLayout>

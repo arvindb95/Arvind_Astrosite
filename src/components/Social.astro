@@ -1,0 +1,17 @@
+---
+import { Icon } from 'astro-icon/components';
+import { TRANSITION_AFTER_PREPARATION, TRANSITION_AFTER_SWAP } from 'astro:transitions/client';
+
+const email = "mailto:arvind.balasubramanian@tifr.res.in"
+const ads_link = "https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3A%22astronomy%22)&q=%20author%3A%22Balasubramanian%2C%20Arvind%22&sort=date%20desc%2C%20bibcode%20desc&p_=0"
+const orcid_link = "https://orcid.org/0000-0003-0477-7645"
+const google_scholar_link = "https://scholar.google.com/citations?user=pGR6CnoAAAAJ&amp"
+const github_link = "https://github.com/arvindb95"
+---
+<div class="social-logos"> 
+  <a href={email} title="Email"><span><Icon class="social-icon" name="envelope"/></span></a>
+  <a href={ads_link} title="NASA ADS" target="_blank"><Icon class="social-icon" name="ads"/></a>
+  <a href={orcid_link} title="ORCID" target="_blank"><Icon class="social-icon" name="orcid"/></a>
+  <a href={google_scholar_link} title="Google Scholar" target="_blank"><span><Icon class="social-icon" name="google-scholar"/></span></a>
+  <a href={github_link} title="Github" target="_blank"><Icon class="social-icon" name="github"/></a>
+</div>

@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectCards from "../components/ProjectCards.astro"
+
+const allProjects = await Astro.glob('../pages/projects/*.md');
+const tabTitle = "Arvind's Research"
+const pageTitle = "Research"
+---
+
+<BaseLayout tabTitle={tabTitle} pageTitle={pageTitle}>
+    <h3>A brief overview of my research projects...</h3>
+    <p>
+        My research focusses on these <i>astrophysical transients</i>. The term <i>transient</i> here, is used to refer to sources that change in short timescales - from a few seconds to sometimes a few years, as opposed to the longer timescales that characterize e.g. the steady evolution of stars and galaxies. Astrophysical transients are sometimes associated with cataclysmic events like death of a star or merger of compact objects. 
+    </p>
+    <p> Click on the links below to read more about my work on that topic : </p>    
+    <ProjectCards />
+</BaseLayout>
