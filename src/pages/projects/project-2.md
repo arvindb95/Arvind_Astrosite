@@ -12,7 +12,7 @@ During the course of my [PhD thesis](/Arvind_PhD_Thesis_Final_Draft.pdf), I have
 
 #### EMGW - Electromagnetic follow-up of Gravitational Wave events
 
-<div style="float: left;  width: 50%; margin: 1em -2em;">
+<div style="float: left;  width: 50%; margin-right: 1em; border-radius: 15px">
 <div class="center-image">
    <Image class="center-image-img" style="width:80%" src="/GWTC-3_stellar-graveyard_diamond.webp" alt="Stellar graveyard" title="Stellar graveyard"/>
 </div>
