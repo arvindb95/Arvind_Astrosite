@@ -171,60 +171,7 @@ html {
   }
    
 
-  @media screen and (max-width: 1000px) {
-  .threelines {
-    cursor: pointer;
-    width: 40px;
-  }
-  
-  .threelines .line {
-    display: block;
-    margin-left: 0;
-    margin-right: auto;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: var(--theme-color);
-  }
 
-  .side-bar {
-    width: 100%;
-    top: 5rem;
-    left: 48px;
-    display: none;
-    margin: 0;
-    position: sticky;
-  }
-
-  .side-bar a {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color : var(--theme-color);
-    background-color: var(--hdr-ftr-bkg-color);
-  }
-  
-  .side-bar a:hover,
-  .side-bar a:focus {
-    color : var(--white-color);
-    background-color: var(--body-bkg-color);
-  }
-  
-  .expanded {
-    display: unset;
-  }
-   
-  .content {
-    display: block;
-    min-height: 100%;
-    width: 90%;
-    margin: 1vw 1vw;     
-  } 
- 
-}  
 
 .social-logos { 
     display: flex;
@@ -279,3 +226,104 @@ html {
   height: 70%;
 }
 
+.paper-link{
+  margin: 2% 0;
+  width: 100%;
+  /*background-color: var(--hdr-ftr-bkg-color);*/
+
+
+}
+
+.paper-link a{
+  display: flex;
+  background-image: none;
+  justify-content: center;
+  padding: 0;
+  color: var(--content-link-visited-color); 
+  line-height: 1;
+}
+
+.paper-year {
+  width: 10%;
+  padding: 0 2%;
+  min-width: 100px;
+  text-align: right; 
+  background-color: var(--icon-bkg-color);
+  color: var(--content-link-color);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.paper-card{
+  padding: 0 2%;
+  width: 80%; 
+  background-color: var(--hdr-ftr-bkg-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+    h4 {
+    color: var(--content-link-visited-color)
+  }
+  p {
+    color: var(--content-link-color)
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .threelines {
+    cursor: pointer;
+    width: 40px;
+  }
+  
+  .threelines .line {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: var(--theme-color);
+  }
+
+  .side-bar {
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    display: none;
+    margin: 0;
+    position: sticky;
+  }
+
+  .side-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color : var(--theme-color);
+    background-color: var(--hdr-ftr-bkg-color);
+  }
+  
+  .side-bar a:hover,
+  .side-bar a:focus {
+    color : var(--white-color);
+    background-color: var(--body-bkg-color);
+  }
+  
+  .expanded {
+    display: unset;
+  }
+   
+  .content {
+    display: block;
+    min-height: 100%;
+    width: 90%;
+    margin: 1vw 1vw;     
+  }
+  
+  .paper-card {
+    min-width: 100px;
+  }
+ 
+}  
