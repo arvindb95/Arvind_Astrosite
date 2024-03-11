@@ -170,28 +170,6 @@ html {
     }      
   }
    
-
-
-
-.social-logos { 
-    display: flex;
-    justify-content: center;
-    padding: 1% 0; 
-    margin: 1% 1%; 
-  a {
-    color: var(--content-link-color);
-    background-color: var(--icon-bkg-color);
-    text-decoration: none;
-    padding: 7%;
-    margin: 2%;
-    border-radius: 50%;
-  }
-  .social-icon{
-    position: absolute;
-    transform: translate(-50%, -50%) scale(170%);    
-  }
-}
-
 .project-cards{
   display: flex;
   justify-content: center;
@@ -326,4 +304,26 @@ html {
     min-width: 100px;
   }
  
-}  
+}
+
+
+.social-logos { 
+    display: flex;
+    justify-content: center;
+    padding: 1% 0; 
+    margin: 1% 1%; 
+  a {
+    color: var(--content-link-color);
+    background-color: var(--icon-bkg-color);
+    text-decoration: none;
+    padding: 7%;
+    margin: 2%;
+    border-radius: 50%;
+  }
+  .social-icon{
+    position: absolute;
+    transform: translate(-50%, -50%) scale(170%);    
+  }
+}
+
+  
