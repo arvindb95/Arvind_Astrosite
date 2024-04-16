@@ -246,6 +246,11 @@ html {
   }
 }
 
+.paper-link .paper-card:hover{
+  transform: scale(105%);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 20px 80px 0 rgba(0, 0, 0, 0.19);
+}
+ 
 
 @media screen and (max-width: 1000px) {
   .threelines {
