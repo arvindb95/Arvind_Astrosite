@@ -226,6 +226,7 @@ html {
   width: 90%; 
   background-color: var(--sidebar-bkg-color);
   border-radius: 10px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 80px 0 rgba(0, 0, 0, 0.19);
     h4 {
     color: var(--content-link-visited-color)
   }
