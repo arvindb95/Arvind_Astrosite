@@ -1,9 +1,9 @@
 :root {
-    --sidebar-bkg-color : #0D0802;
-    --body-bkg-color : #1A1004;
+    --sidebar-bkg-color : #181818;
+    --body-bkg-color : #1F1F1F;
     --theme-color : #FF9933;
     --white-color : #FFFFFF ;
-    --icon-bkg-color : #1A1004 ;
+    --icon-bkg-color : #000000 ;
     --content-link-visited-color: #00AB41;
     --content-link-color: #ABF7B1;
 }
