@@ -1,22 +1,25 @@
+@font-face {
+    font-family: "Adwaita";
+    src: url("../fonts/AdwaitaSans-Regular.ttf");
+}
+
 html {
     background-color: var(--body-bkg-color);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Adwaita', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
   }
-  
+
   body {
-    margin: 1vw 0;
-    width: 100%;
-    max-width: 97vw;
-    min-height: 100%; 
-    padding: 3vw;
+    /*margin: 3vw 0;*/
+    min-height: 100%;
+    padding: 5%;
     line-height: 1.5;
     color: var(--white-color);
   }
 
   h1 {
     color: var(--theme-color);
-    font-size: 300%; 
+    font-size: 350%;
   }
 
   h3 {
@@ -30,7 +33,7 @@ html {
   p {
     font-size: 120%;
   }
-  
+
   * {
     box-sizing: border-box;
   }
@@ -41,7 +44,7 @@ html {
     width: 100%;
     height: 30px;
     text-align: center;
-    font-size: 80%; 
+    font-size: 80%;
     background-color: var(--sidebar-bkg-color);
     border-radius : 15px;
     margin-top: 5vh;
@@ -57,7 +60,7 @@ html {
       padding: 3px 3px;
       border-radius: 3px;
       background-image: none;
-    } 
+    }
   }
 
   /* nav styles */
@@ -65,12 +68,13 @@ html {
   .side-bar {
     display: block;
     border-radius: 15px;
-    position: static;
+    position: fixed;
+    top: 7.5%;
     float: left;
-    width: 25vw;
+    width: 25%;
     background: none;
-    background-color: var(--sidebar-bkg-color); 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: var(--sidebar-bkg-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .side-bar img{
@@ -105,7 +109,7 @@ html {
     width: 100%;
     padding: 3%;
     text-align: center;
-  
+
   }
 
   .side-bar a {
@@ -113,29 +117,32 @@ html {
     padding: 3% 10%;
     text-decoration: none;
     font-size: 1.2rem;
-    font-weight: bold;
     color : var(--content-link-color);
     background-color: var(--sidebar-bkg-color);
-    border-radius: 30px; 
+    border-radius: 30px;
   }
 
-  .side-bar a:hover,
-  .side-bar a:focus {
+  .side-bar a:hover {
     color : var(--white-color);
     background-color: var(--body-bkg-color);
+  }
+
+
+  .side-bar a:active{
+    font-size : 1.5rem;
   }
 
   .content {
     display: block;
     float: right;
     min-height: 100%;
-    width: 60vw;
-    padding-left: 1vw;
-    margin-bottom: 3vw;
-    
+    width: 70%;
+    padding-left: 5%;
+    margin-bottom: 7.5%;
+
     a {
       color: var(--content-link-color);
-      text-decoration: none; 
+      text-decoration: none;
       background-image: url(../icons/link.svg);
       background-repeat: no-repeat;
       background-position: top right;
@@ -149,7 +156,7 @@ html {
 
     .center-image{
       margin-top: 3%;
-      text-align: center; 
+      text-align: center;
     }
 
     .center-image-img{
@@ -167,9 +174,9 @@ html {
       border-radius: 3px;
       background-image: none;
     }
-    }      
+    }
   }
-   
+
 .project-cards{
   display: flex;
   justify-content: center;
@@ -177,7 +184,7 @@ html {
   flex-wrap: wrap;
   width: 100%;
 }
- 
+
 .project-cards a {
     padding-right: 0;
     text-align: center;
@@ -217,13 +224,13 @@ html {
   background-image: none;
   justify-content: center;
   padding: 0;
-  color: var(--content-link-visited-color); 
+  color: var(--content-link-visited-color);
   line-height: 1;
 }
 
 .paper-card{
   padding: 0;
-  width: 90%; 
+  width: 90%;
   background-color: var(--sidebar-bkg-color);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -247,7 +254,7 @@ html {
   min-width: 100px;
   text-align: right;
   float: left;
-  height: 100%; 
+  height: 100%;
   background-color: var(--icon-bkg-color);
   color: var(--content-link-color);
   border-bottom-left-radius: 10px;
@@ -262,9 +269,9 @@ html {
 @media screen and (max-width: 1000px) {
   .threelines {
     cursor: pointer;
-    width: 40px;
+    width: 10%;
   }
-  
+
   .threelines .line {
     display: block;
     margin-left: 0;
@@ -294,41 +301,40 @@ html {
     color : var(--theme-color);
     background-color: var(--sidebar-bkg-color);
   }
-  
+
   .side-bar a:hover,
   .side-bar a:focus {
     color : var(--white-color);
     background-color: var(--body-bkg-color);
   }
-  
+
   .expanded {
     display: unset;
   }
-   
+
   .content {
     display: block;
     min-height: 100%;
     width: 90%;
-    margin: 1vw 1vw;     
   }
-  
-  
-  
+
+
+
   .paper-title {
     padding: 0;
     float: right;
     width: 60%;
   }
-    
- 
+
+
 }
 
 
-.social-logos { 
+.social-logos {
     display: flex;
     justify-content: center;
-    padding: 1% 0; 
-    margin: 1% 1%; 
+    padding: 1% 0;
+    margin: 1% 1%;
   a {
     color: var(--content-link-color);
     background-color: var(--icon-bkg-color);
@@ -339,8 +345,6 @@ html {
   }
   .social-icon{
     position: absolute;
-    transform: translate(-50%, -50%) scale(170%);    
+    transform: translate(-50%, -50%) scale(170%);
   }
 }
-
-  
