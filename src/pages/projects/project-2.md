@@ -8,7 +8,7 @@ image:
     alt: "Kilonova"
 ---
 
-During the course of my [PhD thesis](/Arvind_PhD_Thesis_Final_Draft.pdf), I have worked on radio observations of transients like the merger of neutron stars and core-collapse supernovae. Here is a brief description of my work.
+During the course of my [PhD thesis](https://ttu-ir.tdl.org/items/8962b9c7-d77a-4cc6-a5af-d8073bb21b68), I have worked on radio observations of transients like the merger of neutron stars and core-collapse supernovae. Here is a brief description of my work.
 
 #### EMGW - Electromagnetic follow-up of Gravitational Wave events
 
