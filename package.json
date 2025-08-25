@@ -10,8 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^4.0.5",
-    "astro": "^5.4.2",
+    "@astrojs/preact": "^4.1.0",
+    "astro": "^5.13.3",
     "astro-icon": "^1.1.5",
     "dayjs": "^1.11.13",
     "font-awesome": "^4.7.0",
